@@ -30,6 +30,8 @@ import java.util.stream.IntStream;
 
 public class MainActivity extends AppCompatActivity{
 
+    ArrayList<ArrayList<Map<String,Double>>> allOptions = new ArrayList<>();
+
     public Double calculatePrice(Map<String, Double> CoinPackageandPrice){
 
         double price=0.00;
@@ -189,6 +191,7 @@ public class MainActivity extends AppCompatActivity{
         System.out.println(CombinationsAndPriceArray);
 
 
+        Options.setArrayListofOptions(CombinationsAndPriceArray);
         return CombinationsAndPriceArray;
 
     }
@@ -212,10 +215,11 @@ public class MainActivity extends AppCompatActivity{
 
         System.out.println(CombinationsAndPriceArray);
 
+        Options.setArrayListofOptions(CombinationsAndPriceArray);
+
         return CombinationsAndPriceArray;
 
     }
-
 
     public void sum_up_recursive(ArrayList<Integer> numbers, int target, ArrayList<Integer> partial) {
 
@@ -247,16 +251,17 @@ public class MainActivity extends AppCompatActivity{
 
     }
 
+    //[{100=1.0},{price=10.09}]
+
     public void switchView(){
 
         System.out.println("Main Activity: switch view ");
 
         Intent options=new Intent(this,Options.class);
 
-
-
         startActivity(options);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -335,6 +340,8 @@ public class MainActivity extends AppCompatActivity{
                 //4)
 
                 switchView();
+
+                System.out.println(allOptions);
 
             }
 

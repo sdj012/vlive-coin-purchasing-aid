@@ -16,7 +16,15 @@ public class Options extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
 
-    ArrayList<Map<String,Double>> list_of_options = new ArrayList<Map<String,Double>>();
+//    ArrayList<Map<String,Double>> list_of_options = new ArrayList<Map<String,Double>>();
+
+    public static ArrayList<ArrayList<Map<String,Double>>> list_of_options = new ArrayList<>(); //An array of hashMap arrays /  Array of hashMap arrays
+
+    public static void setArrayListofOptions(ArrayList<Map<String,Double>> hashMapArray){
+        list_of_options.add(hashMapArray);
+        System.out.println(list_of_options);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
