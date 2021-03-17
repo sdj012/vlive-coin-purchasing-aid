@@ -1,4 +1,4 @@
-# vlive-coin-purchasing-aid
+# Purchase Optimizer for VLIVE
 
 Given a target value and prices for VLIVE coins for their area, users can view all buying options.
 
