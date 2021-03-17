@@ -10,4 +10,4 @@ Given a target value and prices for VLIVE coins for their area, users can view a
 
 <img src="https://user-images.githubusercontent.com/49047379/111523898-2a234080-8732-11eb-9ea8-64c38df600ad.jpg" width="200" height="auto">
 
-[![Watch the video](https://youtu.be/hpGE_m2fqbg)
+<a href="https://youtu.be/hpGE_m2fqbg"><img src="https://user-images.githubusercontent.com/49047379/111525256-c3068b80-8733-11eb-8e76-7c1ea4784183.gif" width="200" height="auto"></a>
